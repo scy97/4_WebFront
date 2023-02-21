@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+}
+
+.header {
+    background-color: purple;
+    width: 100vw;
+    height: 10vw;
+    margin: 10px;
+}
+
+.line {
+    background-color: pink;
+    width: 20vw;
+    height: 90vw;
+    margin: 10px;
+}
+
+.content {
+    background-color: green;
+    width: 80vw;
+    height: 90vw;
+    margin: 10px;
+}
