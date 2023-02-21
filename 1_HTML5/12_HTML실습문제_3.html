@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form>
+    <form action="test" method="post">
         <h1>회원 가입</h1>
 
         <fieldset>
@@ -19,7 +19,7 @@
                 <tr>
                     <th>ID</th>
                     <td>
-                        <input type="text" placeholder="아이디 10글자 이내" name="inputId">
+                        <input type="text" placeholder="아이디 10글자 이내" name="inputId" required>
                     </td>
                     <td>
                         <button type="button">중복 확인</button>
@@ -66,7 +66,8 @@
            
             성별 : <input type="radio" id="man" value="man" name="gender" checked>
             <label for="man">남자</label>
-            <input type="radio" id="woman" value="woman" name="gender"> 
+            <input type="radio" id="woman" value="woman" name="gender">
+            <label for="woman">여자</label>
             <br><br>
            
             생년월일 : <input type="date" name="dateIn"><br><br>
