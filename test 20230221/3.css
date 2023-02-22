@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    padding: 1%;
+}
+
+.header {
+    background-color: purple;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 1%;
+}
+
+.line {
+    background-color: pink;
+    width: 19%;
+    height: 77%;
+    margin-inline-end: 1%;
+}
+
+.line2 {
+    background-color: pink;
+    width: 19%;
+    height: 77%;
+    margin-inline-start: 1%;
+}
+
+.content {
+    background-color: green;
+    width: 60%;
+    height: 77%;
+    
+}
