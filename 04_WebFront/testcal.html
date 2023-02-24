@@ -11,24 +11,26 @@
 
 <body>
     <div id="container">
-        <div class="display"></div>
+        <div id="display">
+            <p id="text"></p>
+        </div>
         <div class="button">
             <div class="numpad">
-                <div onclick="inputNum()">1</div>
-                <div onclick="inputNum()">2</div>
-                <div onclick="inputNum()">3</div>
-                <div onclick="inputNum()">4</div>
-                <div onclick="inputNum()">5</div>
-                <div onclick="inputNum()">6</div>
-                <div onclick="inputNum()">7</div>
-                <div onclick="inputNum()">8</div>
-                <div onclick="inputNum()">9</div>
-                <div onclick="inputNum()">0</div>
+                <button onclick="num(this)">1</button>
+                <button onclick="num(this)">2</button>
+                <button onclick="num(this)">3</button>
+                <button onclick="num(this)">4</button>
+                <button onclick="num(this)">5</button>
+                <button onclick="num(this)">6</button>
+                <button onclick="num(this)">7</button>
+                <button onclick="num(this)">8</button>
+                <button onclick="num(this)">9</button>
+                <button onclick="num(this)">0</button>
             </div>
             <div class="calpad">
-                <div>+</div>
-                <div>-</div>
-                <div>=</div>
+                <button onclick="op(this)">+</button>
+                <button onclick="op(this)">-</button>
+                <button onclick="cal()">=</button>
             </div>
         </div>
     </div>
