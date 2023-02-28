@@ -1,0 +1,18 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    width: 450px;
+}
+
+#content {
+    display: flex;
+}
+
+#textField {
+    flex-basis: 27%;
+}
+
+#buttonField {
+    text-align: center;
+}
