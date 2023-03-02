@@ -1,24 +1,16 @@
 const box = document.querySelectorAll("td");
 const input = document.querySelectorAll("td > input");
-const transduration = document.getElementById("inputDuration");
-const btn = document.getElementById("change");
-const time = document.getElementById("currentDuration");
+const inputDuration = document.getElementById("inputDutation");
+const change = document.getElementById("change");
 
-box.forEach(function (target) {
-    target.addEventListener("keyup", logEvent);
-});
-
-function logEvent(event) {
-    const i = this.className;
-    this.style.backgroundColor = input[i].value;
-    console.log(input[i].value);
-};
-
-btn.addEventListener("click", transEvent);
-
-function transEvent() {
-    box.forEach(function(target) {
-        target.style.transitionDuration = transduration.value + "s";
-    })
-    time.innerText = transduration.value + "초";
+for(let val of box) {
+    val.addEventListener("keyup", () => {
+        console.log(event.target.value);
+        val.firstElementChild.style.backgroundColor = event.target.value;
+    });
 }
+
+change.addEventListener("click", () => {
+    // box.style.transitionDuration = inputDuration.value;
+    console.log(inputDuration.value);
+});
