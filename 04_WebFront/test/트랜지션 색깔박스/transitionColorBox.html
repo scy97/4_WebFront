@@ -20,14 +20,15 @@
         td {
             display: flex;
             flex-direction: column;
+            /* transition-duration: 1s; */
         }
-
-        div {
+        
+        td > div {
             width: 100px;
             height: 100px;
             border: 1px solid black;
             border-bottom: 0;
-            transition-duration: 0s;
+            
         }
 
         input {
@@ -44,24 +45,24 @@
 <body>
     <table>
         <tr>
-            <td>
-                <div id="colorBox1"></div>
+            <td class="0">
+                <div></div>
                 <input type="text" id="inputColor1">
             </td>
-            <td>
-                <div id="colorBox2"></div>
+            <td class="1">
+                <div></div>
                 <input type="text" id="inputColor2">
             </td>
-            <td>
-                <div id="colorBox3"></div>
+            <td class="2">
+                <div></div>
                 <input type="text" id="inputColor3">
             </td>
-            <td>
-                <div id="colorBox4"></div>
+            <td class="3">
+                <div></div>
                 <input type="text" id="inputColor4">
             </td>
-            <td>
-                <div id="colorBox5"></div>
+            <td class="4">
+                <div></div>
                 <input type="text" id="inputColor5">
             </td>
         </tr>
