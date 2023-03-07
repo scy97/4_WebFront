@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    margin-inline: 5px;
+}
+
+#menu {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 200%;
+}
+
+#logo {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+#logo>a {
+    text-decoration-line: none;
+    color: black;
+}
+
+#logo>a>span {
+    font-weight: bold;
+}
+
+#search {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 200%;
+}
+
+#content {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#content>form {
+    border: 1px solid black;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#content>form>fieldset {
+    margin: 5px;
+}
+
+#content section {
+    display: flex;
+}
+
+#input-todo {
+    outline: none;
+    text-align: center;
+    width: 60vw;
+    font-size: 20px;
+}
+
+#sendIcon {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#sendBtn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#history {
+    border-top: 1px solid gray;
+    font-size: 20px;
+
+    flex-direction: column;
+}
+
+#history>div {
+    display: flex;
+}
+
+#option {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+
+    border-top: 1px solid gray;
+}
+
+#option section {
+    margin-top: 5px;
+}
+
+#option section:first-child {
+    flex-basis: 24%;
+}
+
+#option section:nth-child(2) {
+    flex-basis: 52%;
+    justify-content: center;
+    align-items: center;
+}
+
+#all {
+    flex-basis: 25%;
+    text-align: center;
+    border: 2px solid cornflowerblue;
+    border-radius: 7px;
+}
+
+#do {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+#done {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+#option section:last-child {
+    flex-basis: 24%;
+    justify-content: right;
+}
