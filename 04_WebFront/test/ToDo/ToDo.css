@@ -24,6 +24,10 @@ header {
     font-size: 200%;
 }
 
+#menuBtn {
+    cursor: pointer;
+}
+
 #logo {
     flex-basis: 70%;
     display: flex;
@@ -49,41 +53,45 @@ header {
     font-size: 200%;
 }
 
+#searchBtn {
+    cursor: pointer;
+}
+
 #content {
     height: 90%;
-    display: flex;
-    justify-content: center;
+    width: 60%;
+    margin: auto;
 }
 
 #content>form {
     border: 1px solid black;
     height: fit-content;
     display: flex;
-    justify-content: center;
 }
 
 #content>form>fieldset {
     margin: 5px;
+    width: 100%;
 }
 
 #content section {
     display: flex;
 }
 
-#input-todo {
+#input_todo {
     outline: none;
     text-align: center;
-    width: 60vw;
+    width: 100%;
     font-size: 20px;
-}
-
-#sendIcon {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    resize: none;
+    overflow: hidden;
+    font-family: '맑은고딕';
 }
 
 #sendBtn {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     font-size: 20px;
     cursor: pointer;
 }
@@ -97,6 +105,20 @@ header {
 
 #history>div {
     display: flex;
+}
+
+.listCheckBtn {
+    cursor: pointer;
+}
+
+.listRemoveBtn {
+    cursor: pointer;
+}
+
+.todoText {
+    flex-basis: 100%;
+    margin-inline: 5px;
+    word-break: break-all;
 }
 
 #option {
@@ -131,14 +153,22 @@ header {
 #do {
     flex-basis: 30%;
     text-align: center;
+    cursor: pointer;
 }
 
 #done {
     flex-basis: 25%;
     text-align: center;
+    cursor: pointer;
 }
 
 #option section:last-child {
     flex-basis: 24%;
     justify-content: right;
+}
+
+#removeAll {
+    border: 2px solid cornflowerblue;
+    border-radius: 7px;
+    cursor: pointer;
 }

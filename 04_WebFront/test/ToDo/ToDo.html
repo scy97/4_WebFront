@@ -15,7 +15,7 @@
     <main>
         <header>
             <section id="menu">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="menuBtn"></i>
             </section>
 
             <section id="logo">
@@ -26,7 +26,7 @@
             </section>
 
             <section id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
             </section>
         </header>
 
@@ -34,32 +34,32 @@
             <form action="#">
                 <fieldset>
                     <section>
-                        <input type="text" id="input-todo" placeholder="해야 할 일을 입력해주세요.">
-                        <div id="sendIcon"><i class="fa-solid fa-plus" id="sendBtn"></i></div>
+                        <textarea id="input_todo" rows="1" placeholder="해야 할 일을 입력해주세요."></textarea>
+                        <div id="sendBtn"><i class="fa-solid fa-plus"></i></div>
                     </section>
 
                     <section id="history">
                         <div>
-                            <div>
-                                <i class="fa-regular fa-square-check listCheckBtn"></i>
+                            <div class="listCheckBtn">
+                                <i class="fa-regular fa-square-check"></i>
                             </div>
-                            <div>
-                                asd
+                            <div class="todoText">
+                                text
                             </div>
-                            <div>
-                                <i class="fa-solid fa-trash listRemoveBtn"></i>
+                            <div class="listRemoveBtn">
+                                <i class="fa-solid fa-trash"></i>
                             </div>
                         </div>
                         
                         <div>
-                            <div>
-                                <i class="fa-solid fa-square-check listCheckBtn"></i>
+                            <div class="listCheckBtn">
+                                <i class="fa-solid fa-square-check"></i>
                             </div>
-                            <div>
-                                asd
+                            <div class="todoText">
+                                text
                             </div>
-                            <div>
-                                <i class="fa-solid fa-trash listRemoveBtn"></i>
+                            <div class="listRemoveBtn">
+                                <i class="fa-solid fa-trash"></i>
                             </div>
                         </div>
                     </section>
@@ -74,7 +74,7 @@
                             <div id="done">완료</div>
                         </section>
                         <section>
-                            <div>전체 삭제</div>
+                            <div id="removeAll">전체 삭제</div>
                         </section>
                     </section>
                 </fieldset>
