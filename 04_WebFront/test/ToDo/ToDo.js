@@ -1,7 +1,6 @@
 const input_todo = document.getElementById("input_todo");
 const sendBtn = document.getElementById("sendBtn");
-const listCheckBtn = document.getElementsByClassName("listCheckBtn");
-const history = document.getElementById("history").childNodes;
+let todoListNum = 0;
 
 input_todo.addEventListener("input", (e) => {
     e.target.style.height = "1px";
@@ -15,32 +14,37 @@ window.addEventListener("resize", () => {
 
 sendBtn.addEventListener("click", () => {
     const div = document.createElement("div");
-    const createlistCheckBtn = document.createElement("div");
-    const createlistCheckIcon = document.createElement("i");
+    const createlistCheckBtn = document.createElement("input");
+    const createlistCheckLabel = document.createElement("label");
     const createtodoText = document.createElement("div");
     const createlistRemoveBtn = document.createElement("div");
     const createlistRemoveIcon = document.createElement("i");
-
+    
+    createlistCheckBtn.setAttribute("type", "checkbox");
     createlistCheckBtn.classList.add("listCheckBtn");
-    createlistCheckIcon.classList.add("fa-regular", "fa-square-check");
+    createlistCheckBtn.id = "listCheckBtn" + (todoListNum++);
+    createlistCheckBtn.ariaLabel = "check";
+    createlistCheckLabel.setAttribute("for", createlistCheckBtn.id);
+
     createtodoText.classList.add("todoText");
     createlistRemoveBtn.classList.add("listRemoveBtn");
     createlistRemoveIcon.classList.add("fa-solid", "fa-trash");
-
-    createlistCheckBtn.append(createlistCheckIcon);
+    
     createlistRemoveBtn.append(createlistRemoveIcon);
-
+    
     createtodoText.innerText = document.getElementById("input_todo").value;
-
-    div.append(createlistCheckBtn, createtodoText, createlistRemoveBtn);
-
+    
+    div.append(createlistCheckBtn, createlistCheckLabel, createtodoText, createlistRemoveBtn);
+    
     document.getElementById("history").append(div);
+
+    const listRemoveBtn = document.getElementsByClassName("listRemoveBtn");
+    for (i of listRemoveBtn) {
+        i.addEventListener("click", function() {
+            this.parentElement.remove();
+        });
+    }
+   
 });
 
-console.log(history);
 
-for (let i of history) {
-    i.addEventListener("click", () => {
-        i.classList.toggle("fa-solid");
-    });
-}

@@ -65,7 +65,7 @@ header {
 
 #content>form {
     border: 1px solid black;
-    height: fit-content;
+    height: auto;
     display: flex;
 }
 
@@ -105,10 +105,26 @@ header {
 
 #history>div {
     display: flex;
+    flex-basis: 100%;
 }
 
 .listCheckBtn {
+    display: none;
+}
+
+.listCheckBtn + label {
+    width: 24px;
     cursor: pointer;
+    
+    display: inline-block;
+    background-image: url(./image/square-check-regular.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 1px;
+}
+
+.listCheckBtn:checked + label {
+    background-image: url(./image/square-check-solid.svg);
 }
 
 .listRemoveBtn {
@@ -117,7 +133,6 @@ header {
 
 .todoText {
     flex-basis: 100%;
-    margin-inline: 5px;
     word-break: break-all;
 }
 
