@@ -34,12 +34,12 @@
             <form action="#">
                 <fieldset>
                     <section>
-                        <textarea id="input_todo" rows="1" placeholder="해야 할 일을 입력해주세요."></textarea>
+                        <textarea id="input_todo" rows="1" placeholder="해야 할 일을 입력해주세요." autofocus></textarea>
                         <div id="sendBtn"><i class="fa-solid fa-plus"></i></div>
                     </section>
 
                     <section id="history">
-                            <div class="list">
+                            <div>
                                 <input type="checkbox" class="listCheckBtn" id="listCheckBtn1" aria-label="check">
                                 <label for="listCheckBtn1"></label>
                                 <div class="todoText">
@@ -53,11 +53,11 @@
 
                     <section id="option">
                         <section>
-                            <div>0개</div>
+                            <div id="listCount">0개</div>
                         </section>
                         <section>
                             <div id="all">전체</div>
-                            <div id="do">진행중</div>
+                            <div id="doing">진행중</div>
                             <div id="done">완료</div>
                         </section>
                         <section>

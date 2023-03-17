@@ -106,6 +106,7 @@ header {
 #history>div {
     display: flex;
     flex-basis: 100%;
+    visibility: hidden;
 }
 
 .listCheckBtn {
@@ -165,7 +166,7 @@ header {
     border-radius: 7px;
 }
 
-#do {
+#doing {
     flex-basis: 30%;
     text-align: center;
     cursor: pointer;
