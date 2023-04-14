@@ -12,67 +12,62 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <section id="menu">
-                <i class="fa-solid fa-bars" id="menuBtn"></i>
-            </section>
-
-            <section id="logo">
-                <a href="#">
-                    <i class="fa-solid fa-check"></i>
-                    <span>ToDo</span>
-                </a>
-            </section>
-
-            <section id="search">
-                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
-            </section>
-        </header>
-
-        <section id="content">
-            <form action="#">
-                <fieldset>
-                    <section>
-                        <textarea id="input_todo" rows="1" placeholder="해야 할 일을 입력해주세요." autofocus></textarea>
-                        <div id="sendBtn"><i class="fa-solid fa-plus"></i></div>
-                    </section>
-
-                    <section id="history">
-                            <div>
-                                <input type="checkbox" class="listCheckBtn" id="listCheckBtn1" aria-label="check">
-                                <label for="listCheckBtn1"></label>
-                                <div class="todoText">
-                                    test
-                                </div>
-                                <div class="listRemoveBtn">
-                                    <i class="fa-solid fa-trash"></i>
-                                </div>
-                            </div>
-                    </section>
-
-                    <section id="option">
-                        <section>
-                            <div id="listCount">0개</div>
-                        </section>
-                        <section>
-                            <div id="all">전체</div>
-                            <div id="doing">진행중</div>
-                            <div id="done">완료</div>
-                        </section>
-                        <section>
-                            <div id="removeAll">전체 삭제</div>
-                        </section>
-                    </section>
-
-                </fieldset>
-            </form>
+    <header>
+        <section id="menu">
+            <img src="./image/bars-solid.svg" id="menuBtn">
         </section>
 
-        <footer>
-            footer
-        </footer>
+        <section id="logo">
+            <a href="#">
+                <img src="./image/check-solid.svg">
+                <span>ToDo</span>
+            </a>
+        </section>
+
+        <section id="search">
+            <img src="./image/magnifying-glass-solid.svg" id="searchBtn">
+        </section>
+    </header>
+
+    <main>
+        <section id="content">
+            <section>
+                <form action="#" id="inputTodo">
+                    <textarea id="inputText" rows="1" placeholder="해야 할 일을 입력해주세요." autofocus></textarea>
+                    <button id="addBtn"></button>
+                </form>
+            </section>
+
+            <section class="history">
+                <form action="#" id="historyList">
+                    <div>
+                        <input type="checkbox" id="listCheckBtn1" class="listCheckBtn">
+                        <label for="listCheckBtn1"></label>
+                        <div class="todoText">
+                            test
+                        </div>
+                        <div class="listRemoveBtn">
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section id="option">
+                <div id="listCount">0개</div>
+
+                <div id="all">전체</div>
+                <div id="doing">진행중</div>
+                <div id="done">완료</div>
+
+                <div id="removeAll">전체 삭제</div>
+            </section>
+        </section>
     </main>
+
+    <footer>
+        footer
+    </footer>
+
     <script src="./ToDo.js"></script>
 </body>
 
